@@ -35,14 +35,6 @@ npm start
 npm run build
 ~~~
 
-#### Publish CDN (Recommend)
-
-Change the `publicPath` in "project.config.js" to the absolute path of the server.
-
-#### Relative path
-
-Use this branch [relative](https://github.com/beverle-y/react-starter-kit/tree/relative)
-
 ## IE
 You need to downgrade `mobx` to v4.9.2.
 

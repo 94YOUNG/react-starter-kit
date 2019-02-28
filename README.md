@@ -35,14 +35,6 @@ npm start
 npm run build
 ~~~
 
-#### 使用CDN (推荐)
-
-将 project.config.js 内的 `publicPath` 改为服务器绝对路径。
-
-#### 相对路径
-
-请使用该分支[relative](https://github.com/beverle-y/react-starter-kit/tree/relative)
-
 ## IE
 
 若需要兼容 IE，将 `mobx` 的版本降至 v4.9.2。
