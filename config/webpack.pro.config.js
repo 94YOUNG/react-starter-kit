@@ -14,7 +14,7 @@ const {
 
 const production = {
     output: {
-        filename: 'js/[name].[chunkhash:5].js'
+        filename: '[name].[chunkhash:5].js'
     },
     mode   : 'production',
     devtool: false,
@@ -78,11 +78,11 @@ const production = {
             minimal: false
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[chunkhash:5].css'
+            filename: '[name].[chunkhash:5].css'
         }),
         new CopyWebpackPlugin([{
             from: path.join(basePath, 'dll'),
-            to  : path.join(basePath, 'dist', 'dll')
+            to  : path.join(basePath, 'dist')
         }])
     ]
 }

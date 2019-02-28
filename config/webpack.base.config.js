@@ -65,7 +65,7 @@ const base = {
                     loader : 'url-loader',
                     options: {
                         limit: 10000,
-                        name : 'images/[name].[hash:5].[ext]'
+                        name : '[name].[hash:5].[ext]'
                     }
                 }
             },
@@ -75,7 +75,7 @@ const base = {
                     loader : 'url-loader',
                     options: {
                         limit: 10000,
-                        name : 'media/[name].[hash:5].[ext]'
+                        name : '[name].[hash:5].[ext]'
                     }
                 }
             },
@@ -87,7 +87,7 @@ const base = {
                         use : {
                             loader : 'url-loader',
                             options: {
-                                name    : 'fonts/[name].[hash:5].[ext]',
+                                name    : '[name].[hash:5].[ext]',
                                 limit   : 10000,
                                 mimetype: item[1]
                             }
@@ -116,7 +116,7 @@ const base = {
         }),
         new IncludeAssetsPlugin({
             assets: [{
-                path    : 'dll',
+                path    : '',
                 glob    : '*.js',
                 globPath: path.join(basePath, 'dll')
             }],
