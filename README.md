@@ -35,6 +35,10 @@ npm start
 npm run build
 ~~~
 
+#### 使用CDN (推荐)
+
+将 project.config.js 内的 `publicPath` 改为静态资源地址。
+
 ## IE
 
 若需要兼容 IE，将 `mobx` 的版本降至 v4.9.2。

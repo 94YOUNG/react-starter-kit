@@ -35,6 +35,10 @@ npm start
 npm run build
 ~~~
 
+#### Publish CDN (Recommend)
+
+Change the `publicPath` in "project.config.js" to the static resource address.
+
 ## IE
 You need to downgrade `mobx` to v4.9.2.
 
